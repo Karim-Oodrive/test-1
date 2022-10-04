@@ -50,8 +50,12 @@ export class StockComponent implements OnInit {
   }
 
   onSwitchClick(event: any) {
-    if(event.pointerType != 'mouse') { return; }
+    console.log("event", event);
+
+    if(event.pointerType.length > 0) { return; }
     this.active = !this.active;
+    console.log("active", this.active);
+
     this.active ? this.subscription?.closed && this.startWatching() : !this.subscription?.closed && this.stopWatching();
   }
 
