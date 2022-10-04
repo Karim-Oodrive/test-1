@@ -1,0 +1,11 @@
+<ng-container *ngIf="stock">
+  <p class="name">{{stock.name | uppercase}}</p>
+  <p class="name">{{stock.price | currency }}</p>
+  <p class="name">{{ (differance! > 0 ? '+' : '') + differance }} % </p>
+  <p class="name">({{stock.oldPrice}})</p>
+  <p class="name">{{stock.lastTrade | date: 'short' }}</p>
+  <p class="name">{{stock.vol}}</p>
+  <p>
+    <app-switch (click)="onSwitchClick($event)"></app-switch>
+  </p>
+</ng-container>

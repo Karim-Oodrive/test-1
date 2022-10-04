@@ -1,0 +1,32 @@
+:host {
+  display: block;
+  text-align: center;
+
+  width: 200px;
+
+  box-sizing: border-box;
+  padding: 1.5rem;
+
+  border: 1px solid blue;
+  border-radius: 15px;
+
+  font-size: 18px;
+
+  background-color: gray;
+
+  &.increase {
+    background-color: darkseagreen;
+  }
+
+  &.decrease {
+    background-color: lightsalmon;
+  }
+
+  p {
+    margin-top: 1rem;
+  }
+
+  p:nth-child(1) {
+    margin-top: 0;
+  }
+}

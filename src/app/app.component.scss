@@ -8,11 +8,13 @@
 }
 
 .content {
+  padding: 2rem;
+}
+
+.stocks-container {
   display: flex;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   align-items: center;
 }
 

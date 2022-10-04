@@ -1,7 +1,11 @@
 <!-- Toolbar -->
 <app-toolbar></app-toolbar>
 
-<div class="content" role="main">
+<h5> Sorry, I didn't understand the stock's business, So I tried to do something similar :( </h5>
 
+<div class="content">
+  <div class="stocks-container" role="main">
+    <app-stock *ngFor="let stock of stocks" [name]="stock"></app-stock>
+  </div>
 </div>
 
