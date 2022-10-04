@@ -16,12 +16,6 @@
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-}
-
-
-@media screen and (max-width: 575px) {
-  svg#rocket-smoke {
-    display: none;
-    visibility: hidden;
-  }
+  column-gap: 2rem;
+  row-gap: 2rem;
 }

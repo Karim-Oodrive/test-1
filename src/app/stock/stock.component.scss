@@ -1,3 +1,6 @@
+@import '../common/design.scss';
+
+
 :host {
   display: block;
   text-align: center;
@@ -28,5 +31,16 @@
 
   p:nth-child(1) {
     margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: $brekpoint-tablet) {
+  :host {
+    width: 100%;
+  }
+
+  .desktop-only {
+    display: none;
   }
 }
